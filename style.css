@@ -1,0 +1,35 @@
+body {
+ font-family: 'Poppins', sans-serif;
+ background: #f7faff;
+ text-align: center;
+ padding: 40px;
+ color: #333;
+}
+form, .card {
+ background: #fff;
+ border-radius: 12px;
+ padding: 20px;
+ width: 320px;
+ margin: 20px auto;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+input, button {
+ margin: 6px;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ width: 80%;
+}
+button {
+ background-color: #0077ff;
+ color: white;
+ cursor: pointer;
+ border: none;
+}
+.hidden { display: none; }
+.card img {
+ width: 80px; height: 80px;
+ border-radius: 50%;
+ object-fit: cover;
+ margin-bottom: 8px;
+}
