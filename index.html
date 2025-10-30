@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Project Parichay</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+ <h1>■ Project Parichay</h1>
+ <form id="idForm">
+ <input type="text" id="name" placeholder="Full Name" required><br>
+ <input type="text" id="job" placeholder="Occupation" required><br>
+ <input type="text" id="contact" placeholder="Phone Number" required><br>
+ <input type="file" id="photo" accept="image/*"><br>
+ <button type="button" onclick="generateID()">Generate ID</button>
+ </form>
+ <div id="idCard" class="card hidden">
+ <img id="idPhoto" src="" alt="Photo">
+ <h2 id="idName"></h2>
+ <p id="idJob"></p>
+ <p id="idContact"></p>
+ <div id="qrcode"></div>
+ <button onclick="window.print()">Print / Save as PDF</button>
+ </div>
+ <script src="script.js"></script>
+</body>         
+</html>
